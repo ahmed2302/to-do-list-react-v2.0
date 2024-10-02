@@ -11,7 +11,7 @@ export default function App() {
     },
     palette: {
       primary: {
-        main: "#FF4500",
+        main: "#333",
       },
     },
   });
