@@ -1,0 +1,105 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.iconButton {
+  transition: all 0.5s !important;
+}
+
+.iconButton:hover {
+  background-color: #333 !important;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2) !important;
+}
+
+.to-do {
+  transition: 0.3s !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+}
+
+.to-do:hover {
+  padding: 20px 0 !important;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4) !important;
+}
+
+.to-do-list {
+  transition: 0.5s !important;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4) !important;
+}
+
+@font-face {
+  font-family: Alex;
+  src: url("../public/Fonts/Alexandria-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Alex;
+  src: url("../public/Fonts/Alexandria-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Alex;
+  src: url("../public/Fonts/Alexandria-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Alex;
+  src: url("../public/Fonts/Alexandria-Light.ttf");
+  font-weight: 200;
+}
+
+.alert-box {
+  position: absolute !important;
+  right: 20px !important;
+  top: 20px !important;
+  transition: 0.5s !important;
+  display: flex !important;
+  gap: 5px !important;
+  z-index: 100 !important;
+}
+
+.alert-box.hidden {
+  display: none !important;
+}
