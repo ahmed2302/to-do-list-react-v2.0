@@ -1,6 +1,6 @@
 import { Alert, Slide, Snackbar } from "@mui/material";
 import { createContext, useContext, useState } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 const AlertContext = createContext("");
 
@@ -8,7 +8,7 @@ export default function AlertProvider({ children }) {
   const [openAlert, setOpenAlert] = useState(false);
   const [alertMsg, setAlertMsg] = useState("");
   const [alertSeverity, setAlertSeverity] = useState("");
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   function showAlert(msg, severity = "success") {
     setAlertSeverity(severity);
